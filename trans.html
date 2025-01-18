@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="margin: 0%;  font-family:'Comfortaa', cursive;">
+    <div  style="width: 100vw; height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; background-color: #550A78; color: white;">
+        <h2 style="margin: 0;">Transaction Complete</h2>
+        <p>check your mails</p>
+        <button class="done" style="background-color: #550A78;
+        border: none;
+        padding: 0.75rem 1.25rem;
+        border-radius: 25px;
+        font-size: 1rem;
+        transition: background-color 0.3s ease-in-out;
+        background-color: white;
+        cursor: pointer;
+        ">Done</button>
+    </div>
+    <script>
+        document.querySelector('.done').addEventListener('click',(e)=>{
+            window.location.href = 'homepage.php';
+        })
+    </script>
+</body>
+</html>

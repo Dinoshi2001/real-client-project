@@ -1,0 +1,125 @@
+:root{
+  --main-color:#8615a2;
+  --red:rgb(129, 2, 97);
+  --light-color:#777;
+  --light-bg:#eee;
+  --black:#420c52;
+  --white:#fff;
+  --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+  --border:.1rem solid rgba(0,0,0,.2);
+}
+
+*{
+  font-family: 'Comfortaa', cursive;
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none; border: none;
+}
+
+*::selection{
+  background-color: var(--main-color);
+  color: var(--white);
+}
+
+.container {
+ text-align: center;
+}
+
+.container img{
+ width: 50%;
+ margin: 0 auto 1.5rem auto;
+}
+
+.section-title {
+ border-top: 1rem solid var(--main-color);
+ border-bottom: 1rem solid var(--main-color);
+ background-color: var(--black);
+ color: var(--white);
+ text-align: center;
+ padding: 3rem 2rem;
+ font-size: 3rem;
+ text-transform: capitalize;
+}
+
+.question {
+ font-size: 24px;
+ margin-bottom: 30px;
+ margin-top: 30px;
+ text-align: center;
+}
+
+.options-container {
+ display: flex;
+ justify-content: center;
+ flex-wrap: wrap;
+}
+
+.option {
+ position: relative;
+ width: 100px;
+ height: 100px;
+ margin: 20px;
+ font-size: 15px;
+ cursor: pointer;
+ transition: transform 0.2s, border-color 0.2s;
+ border: 2px solid #8615a2;
+ border-radius: 50%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ text-align: center;
+ color: #333;
+}
+
+.option:hover {
+ transform: scale(1.1);
+ background-color: #ebd8f1;
+}
+
+.option.selected {
+ background-color: #8615a2;
+ color: white;
+ border-color: #8615a2;
+}
+
+.option.selected:before {
+ content: '';
+ width: calc(100% - 4px);
+ height: calc(100% - 4px);
+ border-radius: 50%;
+ border: 2px solid #8615a2;
+ position: absolute;
+ top: 2px;
+ left: 2px;
+}
+
+.result {
+ text-align: center;
+ margin-top: 20px;
+ font-size: 24px;
+}
+
+.submit-btn {
+ display: block;
+ margin: 20px auto;
+ padding: 10px 20px;
+ font-size: 18px;
+ border: none;
+ border-radius: 5px;
+ background-color:#8615a2;
+ color: white;
+ cursor: pointer;
+ transition: background-color 0.2s;
+}
+
+.submit-btn:hover {
+ background-color: #600f79;
+}
+
+.line {
+ width: 80%;
+ border-top: 1px solid #ddd;
+ margin: 20px 0;
+ align-items: center;
+}                         
